@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- <link rel='stylesheet' id='breezycv-google-fonts-css'  href='https://fonts.googleapis.com/
     css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,
@@ -24,20 +26,50 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+            <script>
+
+    $(document).ready(function(){
+
+                    $("#blog-btn").click(function(){
+                        $(".hide").toggleClass("open");
+                    });
+
+                    $("#main-bg-div").click(function(){
+                        $(".open").removeClass("open");
+                    });
+
+                    $(".menu-toggle").click(function(){
+                        $(".content-header").removeClass("mobile-menu-hide");
+                        $(".content-header").toggleClass("header animate ");
+                        $(".menu-toggle").toggleClass("open");
+                        
+                        
+                    });
+
+                
+    });     
+                </script>
+
+
+
+
+
+    
 </head>
 
 <body>
     
-<div class="main-div background-div"></div>
+<div class="main-div background-div" ></div>
 
-<div class="container-fluid outter-div ">
+<!-- <div class="container-fluid outter-div " id="main-bg-div"> -->
 
-<section class="section main-section">
+<!-- <section class="section main-section"> -->
 
     <div class="page-content container inner-div">
         <!-- Pic  & Name $ Roles & Social links & home-menu &
               Navigation button &  download cv button & copyright-->
-        <header class="content-header">  
+        <header class="content-header mobile-menu-hide  " >   
              <!-- Pic  & Name $ Roles -->
                 <div class="header-content-div">
                     <div class="header-photo">
@@ -56,27 +88,7 @@
                 </div>
         
             
-                <!-- Social Links -->
-                <div class="social-links">
-                    <ul>
-                        <li>
-                            <a href="#" >
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul> 
-                </div><!-- ./Social Links -->
-                <!-- ./Social Links -->
+                
 
                 <!-- Home-menu -->
                 <div class="menu-board">
@@ -129,16 +141,32 @@
                 </div><!--./menu-board --> 
                 <!--./Home-menu -->
 
-                <!--Navigation-button -->
-                <div class="navigation-arrows-div">
-                <div class=" navigation-arrow navigation-arrow-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-                <div class=" navigation-arrow navigation-arrow-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
-                </div> <!--./navigation-arrows-div -->
-                <!--./Navigation-button -->
+                <!-- Social Links -->
+                <div class="social-links">
+                    <ul>
+                        <li>
+                            <a href="#" >
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" >
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" >
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul> 
+                </div><!-- ./Social Links -->
+                <!-- ./Social Links -->
 
+                
                 <!-- Buttons -->
                 <div class="header-buttons-div">
-                        <a href="#"  class="btn btn-primary download-btn">Download CV</a>
+                        <a href="#"  class="btn btn-primary download-btn" id="main-bg-div">Download CV</a>
                 </div><!--./header-buttons-div -->
                 <!-- /Buttons -->
 
@@ -149,6 +177,24 @@
                 <!-- /Copyrights -->
 
         </header>  <!-- ./content-header -->
+
+        <div class="mobile-site-title mobile-visible">
+            <a href="#">
+                Sandee      
+            </a>
+        </div>
+        <!--Mobile Navigation-->
+        <div class="menu-toggle" >
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+            <!--Navigation-button -->
+            <div class="navigation-arrows-div">
+                <div class=" navigation-arrow navigation-arrow-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                <div class=" navigation-arrow navigation-arrow-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+            </div> <!--./navigation-arrows-div -->
+                <!--./Navigation-button -->
 
 
         <div class="content-area">
@@ -169,15 +215,15 @@
     </div><!-- ./page-content -->
 
     
-</section><!--./main-section-->
+<!-- </section>./main-section -->
 
-</div><!--./outter-div-->
+<!--</div>./outter-div-->
 
 
     <!-- ======================================./Blog-Slider=========================================== -->
           
-    <div id="blog-sidebar" class="blog-sidebar ">
-            <div class="sidebar-toggle ">
+    <div id="blog-sidebar blog-btn" class="blog-sidebar hide ">
+            <div class="sidebar-toggle hide" id="blog-btn">
                 <span></span>
                 <span></span>
                 <span></span>
