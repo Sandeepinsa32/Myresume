@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-            <script>
+<script>
 
     $(document).ready(function(){
 
@@ -35,21 +35,34 @@
                         $(".hide").toggleClass("open");
                     });
 
-                    $("#main-bg-div").click(function(){
-                        $(".open").removeClass("open");
-                    });
 
                     $(".menu-toggle").click(function(){
                         $(".header-content").removeClass("mobile-menu-hide");
                         $(".header-content").toggleClass("header animate ");
                         $(".menu-toggle").toggleClass("open");
-                        
-                        
+                   });
+
+                      // for hiding side header when we click on background 
+                      $(".body-content-area").click(function(){
+                        $(".open").removeClass("open");
+                        $(".header-content").removeClass("header animate");
+                        $(".header-content").toggleClass("mobile-menu-hide");
                     });
 
-                
-    });     
-                </script>
+                    // $(".main-div").click(function(){
+                    //     $(".open").removeClass("open");
+                    // });
+
+                    // $(".page-content").click(function(){
+                    //     $(".open").removeClass("open");
+                    // });
+
+                    // $(".header-content").click(function(){
+                    //     $(".open").removeClass("open");
+                    // });
+
+                                 });     
+</script>
 
 
 
@@ -166,7 +179,7 @@
                 
                 <!-- Buttons -->
                 <div class="header-buttons-div">
-                        <a href="#"  class="btn btn-primary download-btn" id="main-bg-div">Download CV</a>
+                        <a href="#"  class="btn btn-primary download-btn" id="">Download CV</a>
                 </div><!--./header-buttons-div -->
                 <!-- /Buttons -->
 
