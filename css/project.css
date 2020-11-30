@@ -27,7 +27,7 @@ body{
     font-size: 18px;
 }
 ol.Order-list{
-    list-style-type: upper-roman;
+    /* list-style-type: numbe/; */
     color: #fff !important;
     margin: 10px;
 }
