@@ -10,6 +10,9 @@ a:hover {
     text-decoration: none !important;
     color: #fff;
 }
+.active{
+    color: #0ba376 !important;
+}
 ::-webkit-scrollbar{
     width: 5px;
     border-radius: 10px;
@@ -400,7 +403,7 @@ input[type="submit"] {
     color: #666; /*  #b5b6b7 */
 }
 .section-titles-name{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     color: #fff;
 }
@@ -1010,7 +1013,7 @@ input[type="submit"] {
 
 /* ========================--------For Body-content_-_Mobile-View-------============================================ */
     .animated-section {
-        padding-top: 85px;
+        padding: 75px 25px;
         border-radius: 0;
         overflow: auto !important;
     }
@@ -1026,7 +1029,7 @@ input[type="submit"] {
     .sidebar-toggle {
 
         top: 105px !important;
-
+        
     }
 
     .blog-sidebar {
