@@ -1,3 +1,3 @@
 # protfolio_site
 ## Page is Deploy On 
-[Go to Page](https://sandeepportfolio.netlify.app/)
+[portfolio site](https://myresumecom.netlify.app/)
