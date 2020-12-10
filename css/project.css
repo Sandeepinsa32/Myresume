@@ -33,6 +33,9 @@ ol.Order-list{
 }
 ol li{
     padding-top: 10px;
+    border-bottom: 1px solid #0ba376;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
 }
 .section-links{
     float: right!important;
@@ -41,6 +44,7 @@ ol li{
     color: #0ba376 !important;
     padding: 0rem 3rem ;
 }
+
 
 
 @media only screen and (max-width: 1024px) {
