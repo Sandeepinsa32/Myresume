@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project | MyResume2.com </title>
+
+    <link href="css/index.css" type="text/css" rel="stylesheet" >
+    <link href="css/project.css" type="text/css" rel="stylesheet" >
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<script>
+
+    $(document).ready(function(){
+
+                    $("#blog-btn").click(function(){
+                        $(".hide").toggleClass("open");
+                    });
+
+
+                    $(".menu-toggle").click(function(){
+                        // $(".header-content").removeClass("mobile-menu-hide");
+                        // $(".header-content").toggleClass("header animate ");
+                        $("#menu-vcard-menu").toggleClass("show-mobile-menu");
+                        $(".menu-toggle").toggleClass("open");
+                   });
+
+                      // for hiding side header when we click on background 
+                      $(".Shut-Down").click(function(){
+                        $(".open").removeClass("open");
+                        $(".header-content").removeClass("header animate");
+                        // $(".header-content").toggleClass("mobile-menu-hide");
+                    });
+                      
+
+                    // $(".main-div").click(function(){
+                    //     $(".open").removeClass("open");
+                    // });
+
+                    // $(".page-content").click(function(){
+                    //     $(".open").removeClass("open");
+                    // });
+
+                    // $(".header-content").click(function(){
+                    //     $(".open").removeClass("open");
+                    // });
+
+                                 });     
+</script>
+
+
+
+
+
+    
+</head>
+
+<body id="body">
+    
+<div class="background-div" ></div>
+
+    <div class="outter-div">
+            <!-- Home-menu -->
+            <div class="menu-board">
+                <ul id="menu-vcard-menu" class=" main-menu">
+                
+                    <li id="menu-item" class="menu-item menu-item-has-icon">
+                        <a class="nav-anim Shut-Down" href="./index.html">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <span class="link-text">About Me</span>
+                        </a>
+                    </li>
+
+                
+
+
+                    <li id="menu-item" class="menu-item menu-item-has-icon">
+                        <a class="nav-anim active Shut-Down" href="./Project.html">
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            <span class="link-text">Project</span>
+                        </a>
+                    </li>
+
+                    <li id="menu-item" class="menu-item menu-item-has-icon">
+                        <a class="nav-anim " href="#"  id="blog-btn" >
+                            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                            <span class="link-text">Blog</span>
+                        </a>
+                    </li>
+
+
+                    
+                </ul>
+            </div><!--./menu-board --> 
+            <!--./Home-menu -->
+
+
+            <div class="mobile-site-title mobile-visible">
+                <a href="#">
+                    Sandee      
+                </a>
+            </div>
+            <!--Mobile Navigation-->
+            <div class="menu-toggle" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+    </div> <!--./outter-div-->
+        
+    <div class="page-content Shut-Down container-fluid">
+        <div class="row">
+            <div class="body-content-area col-sm-12">
+                <div class="animated-div">
+                    <section class="animated-section">
+                        <div class="section-content">
+                          
+                          <h6 class="section-titles project-title " ><i class="fa fa-terminal active" aria-hidden="true"> </i>  Experience : </h6> 
+                    <!-- ================================================================================= -->
+                    <ol class="Order-list"  reversed>
+
+                        <li>
+                            <article>
+                                <h1 class="section-titles-name " >Best-Random_Quote | RandomQuote.Co</h1>
+                                
+                                <h6 class=" section-title-desc">
+                                    <i class="fa fa-terminal active" aria-hidden="true"> </i> 
+                                   Api Based Web-app Which Deliver Famous Quote's
+                                </h6>
+                                <div class="section-title">
+                                   <span class="date"> 16th November 2020 </span>
+                                   <span class="section-links">
+                                    <a href="https://randomquoteco.netlify.app/" class="Check-it-btn" > <i class="fa fa-play-circle" aria-hidden="true"> </i>&nbsp;Check It Live <i> </i> </a>
+                                    <a href="https://github.com/Sandeepinsa32/Random.Quote.Co" class="" ><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+                                    </span>
+                                </div>
+                                
+                            </article>
+                        </li>
+                       
+                        <li>
+                            <article>
+                                <h1 class="section-titles-name " >📽️ Best-Movie-Recommendation | ⚛️ React</h1>
+                                
+                                <h6 class=" section-title-desc">
+                                    <i class="fa fa-terminal active" aria-hidden="true"> </i> 
+                                    Movie-Recommendation app for paticing React State 
+                                </h6>
+                                <div class="section-title">
+                                   <span class="date"> 16th November 2020 </span>
+                                   <span class="section-links">
+                                    <a href="https://2tb99.csb.app/" class="Check-it-btn"  > <i class="fa fa-play-circle" aria-hidden="true"> </i> &nbsp;Check It Live <i> </i> </a>
+                                    <a href="https://github.com/Sandeepinsa32/best-movies" class="" ><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+                                    </span>
+                                </div>
+                                
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <h1 class="section-titles-name " >😃 Emojipedia | ⚛️ React</h1>
+                                
+                                <h6 class=" section-title-desc">
+                                    <i class="fa fa-terminal active" aria-hidden="true"> </i> 
+                                    🦌🎅 🎁 Emojipedia  is WikiPedia of Emojis  ❄️⛄🎄
+                                </h6>
+                                <div class="section-title">
+                                   <span class="date"> 16th November 2020 </span>
+                                   <span class="section-links">
+                                    <a href="https://quefv.csb.app/" class="Check-it-btn" > <i class="fa fa-play-circle" aria-hidden="true">&nbsp; </i> Check It Live <i> </i> </a>
+                                    <a href="https://github.com/Sandeepinsa32/emojipedia" class="" ><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+                                    </span>
+                                </div>
+                                
+                            </article>
+                        </li><li>
+                            <article>
+                                <h1 class="section-titles-name " >📝 Text-to-Morse_Code Translator| 💻 Vanilla_JavaScript</h1>
+                                
+                                <h6 class=" section-title-desc">
+                                    <i class="fa fa-terminal active" aria-hidden="true"> </i> 
+                                   Web-app Which We Can Use To Convert Text <em>to</em> Morse_Code . 
+                                </h6>
+                                <div class="section-title">
+                                   <span class="date"> 16th November 2020 </span>
+                                   <span class="section-links">
+                                    <a href="https://text2morse.netlify.app/" class="Check-it-btn" > <i class="fa fa-play-circle" aria-hidden="true"> </i> Check It Live <i> </i> </a>
+                                    <a href="https://github.com/Sandeepinsa32/Text-2-Morse_code-Translate" class="" ><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+                                    </span>
+                                </div>
+                                
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <h1 class="section-titles-name " >🔤 English-To-Minion's-Language | 💻 Vanilla_JavaScript</h1>
+                                
+                                <h6 class=" section-title-desc">
+                                    <i class="fa fa-terminal active" aria-hidden="true"> </i> 
+                                   Basic Webapp Which can translate English to Banana Talk (Language Used By Minions).
+
+                                </h6>
+                                <div class="section-title">
+                                   <span class="date"> 16th November 2020 </span>
+                                   <span class="section-links">
+                                    <a href="https://miniontalktool.netlify.app/" class="Check-it-btn" > <i class="fa fa-play-circle" aria-hidden="true"> </i> Check It Live<i> </i> </a>
+                                    <a href="https://github.com/Sandeepinsa32/Minion-Language-Translator-Tool" class="" ><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+                                    </span>
+                                </div>
+                                
+                            </article>
+                        </li>
+                      
+                        <li>
+                            <article>
+                                <h1 class="section-titles-name " > ✨ Simplay-Math-Quiz | 💻  In Node.Js</h1>
+                                
+                                <h6 class=" section-title-desc">
+                                    <i class="fa fa-terminal active" aria-hidden="true"> </i> 
+                                   It is a CLI (Command-Line-Interface)  Based Simple Quiz Game 
+                                </h6>
+                                <div class="section-title">
+                                   <span class="date"> 16th November 2020 </span>
+                                   <span class="section-links">
+                                    <a href="https://repl.it/@sandeepinsa32/first-nodejs-1#index.js?embed=1&output=1" class="Check-it-btn"  > <i class="fa fa-play-circle" aria-hidden="true"> </i> Play Game <i> </i> </a>
+                                    <a href="https://repl.it/@sandeepinsa32/first-nodejs-1#index.js" class="" ><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+                                    </span>
+                                </div>
+                                
+                            </article>
+                        </li>
+                      
+                        <li>
+                            <article>
+                                <h1 class="section-titles-name " > ⌚ Home | ShopWatchReact.Com ⌚</h1>
+                                
+                                <h6 class=" section-title-desc">
+                                    <i class="fa fa-terminal active" aria-hidden="true"> </i> 
+                                    Product Descripton Template Page For Smart-watch  Developed in  ⚛️ <em>React.Js</em>. 
+                            
+                                </h6>
+                                <div class="section-title">
+                                    <span class="date">  16th August 2020 </span>
+                                   <span class="section-links">
+                                    <a href="https://shopsmartwatch.netlify.app/" class="Check-it-btn"  ><i class="fa fa-play-circle" aria-hidden="true"> </i> Check It Live </a>
+                                    <a href="https://github.com/Sandeepinsa32/fitbit.github.io" class="" ><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+                                    </span>
+                                </div>
+                                
+                            </article>
+                        </li>
+
+                        <li>
+                            <article>
+                                <h1 class="section-titles-name " > ⌚ Home | ShopSmartWatch.Com ⌚</h1>
+                                
+                                <h6 class=" section-title-desc">
+                                    <i class="fa fa-terminal active" aria-hidden="true"> </i> 
+                                    Product Descripton Template Page For Smart-watch  Developed in Simple HTML , CSS , Bootstrap , JQuery And JavaScript
+                            
+                                </h6>
+                                <div class="section-title">
+                                    <span class="date">  20th May 2020 </span>
+                                   <span class="section-links">
+                                    <a href="https://shopsmartwatch.netlify.app/" class="Check-it-btn" ><i class="fa fa-play-circle" aria-hidden="true"> </i> Check It Live </a>
+                                    <a href="https://github.com/Sandeepinsa32/fitbit.github.io" class="" ><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+                                    </span>
+                                </div>
+                                
+                            </article>
+                        </li>
+
+                        <li>
+                            <article>
+                                <h1 class="section-titles-name " style="font-size: 22px;"> ✨  Internship | Full-Stack 💻Web-Developer </h1>
+                                
+                                <h6 class=" section-title-desc">
+                                    <i class="fa fa-terminal active" aria-hidden="true"> </i> 
+                                    Full-Stack Web-Developer Using Laravel-PHP , in Learnweel Pvt. Ltd.
+                                </h6>
+                                <div class="section-title">
+                                   <span class="date"> 22th may 2020 </span> <span> - To -</span>
+                                   <span class="date"> 25th july 2020 </span>
+                                   <!-- <span class="section-links">
+                                    <a href="https://watchshoppage.netlify.app/" class="" > <i class="fa fa-play-circle" aria-hidden="true"> </i> Play Game <i> </i> </a>
+                                    <a href="https://github.com/sandee32/fitbit.github.io" class="" ><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+                                    </span> -->
+                                </div>
+                                
+                            </article>
+                        </li>
+
+
+                        <li>
+                            <article>
+                                <h1 class="section-titles-name " > 🛒Cart-Page |  ShopingSite.Com 🛒</h1>
+                                
+                                <h6 class=" section-title-desc">
+                                    <i class="fa fa-terminal active" aria-hidden="true"> </i> 
+                                    Product CartPage for Shopping Site  With Backend IN PHP  
+                            
+                                </h6>
+                                <div class="section-title">
+                                    <span class="date">  10th May 2020 </span>
+                                   <span class="section-links">
+                                    <a href="https://shopingsite.netlify.app/" class="Check-it-btn"  ><i class="fa fa-play-circle" aria-hidden="true"> </i> Check It Live </a>
+                                    <a href="https://github.com/Sandeepinsa32/CartWebpage.github.io" class="" ><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+                                    </span>
+                                </div>
+                                
+                            </article>
+                        </li>
+
+                        <li>
+                            <article>
+                                <h1 class="section-titles-name " > 📜 Home | MyResumeCom 📜</h1>
+                                
+                                <h6 class=" section-title-desc">
+                                    <i class="fa fa-terminal active" aria-hidden="true"> </i> 
+                                 Simple Resume website Developed in Simple HTML , CSS , Bootstrap , JQuery And JavaScript
+                            
+                                </h6>
+                                <div class="section-title">
+                                    <span class="date">  20th April 2020 </span>
+                                   <span class="section-links">
+                                    <a href="https://myresumecom.netlify.app/" class="Check-it-btn"  ><i class="fa fa-play-circle" aria-hidden="true"> </i> Check It Live </a>
+                                    <a href="https://github.com/Sandeepinsa32/protfolio_site" class="" ><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+                                    </span>
+                                </div>
+                                
+                            </article>
+                        </li>
+                      
+                      
+                         <li>
+                            <article>
+                                <h1 class="section-titles-name " > ✨ Homepage|Carpool Website</h1>
+                                
+                                <h6 class=" section-title-desc">
+                                    <i class="fa fa-terminal active" aria-hidden="true"> </i> 
+                                    It is Simple Template For Carpool website Developed in Simple HTML , CSS , Bootstrap , JQuery And JavaScript
+                            
+                                </h6>
+                                <div class="section-title">
+                                    <span class="date">  09th April 2020 </span>
+                                   <span class="section-links">
+                                    <a href="https://carpoolwebsite.netlify.app/" class="Check-it-btn"  ><i class="fa fa-play-circle" aria-hidden="true"> </i> Check It Live </a>
+                                    <a href="https://github.com/Sandeepinsa32/newpool" class="" ><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+                                    </span>
+                                </div>
+                                
+                            </article>
+                         </li>
+
+                      
+
+                                
+                    </ol>
+
+                    
+                        </div> <!--./Section-Content -->
+                    </section> 
+                </div>
+            </div> <!--./Content-area -->
+
+        </div><!-- ./row -->
+    </div><!-- ./page-content -->
+
+
+
+    <!-- ======================================./Blog-Slider=========================================== -->
+          
+    <div id="blog-sidebar blog-btn " class="blog-sidebar hide ">
+        <div class="sidebar-toggle  hide" id="blog-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="blog-sidebar-content clearfix">
+            <div class="sidebar-item">
+                <form role="search" method="get" class="search-form" action="#">
+                    <label>
+                        <span class="screen-reader-text">Search for:</span>
+                        <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                    </label>
+                    <input type="submit" class="search-submit" value="Search">
+                </form>
+            </div>	
+    
+            <div class="sidebar-item">	
+                <div class="sidebar-title">
+                    <h4>Recent Blog</h4>
+                
+                </div>	
+                <ul>
+                    <li>
+                        <a href="./blog.html">How to Speed Up Your Computer ? </a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">How to Speed Up Your Computer ? </a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">How to Speed Up Your Computer ? </a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">How to Speed Up Your Computer ? </a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">How to Speed Up Your Computer ? </a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">How to Speed Up Your Computer ? </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-item">
+                <div class="sidebar-title">
+                    <h4>Recent Comments</h4>
+                </div>
+                <ul id="recentcomments">
+                    <li class="recentcomments">
+                        <span class="comment-author-link">
+                            <a href="" rel="external nofollow ugc" class="url">
+                                A  Comment
+                            </a>
+                        </span>  on     <a href="#">  Hello world!  </a>
+
+                    </li>
+                    <li class="recentcomments">
+                        <span class="comment-author-link">
+                            <a href="" rel="external nofollow ugc" class="url">
+                                A WordPress Commenter
+                            </a>
+                        </span>  on     <a href="#">  Hello world!  </a>
+
+                    </li>
+                </ul>
+            </div>		
+        </div>
+</div>
+
+
+ <!---================================Script-part============================================================--->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+ integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+ integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+ integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+    </body>
+</html>
