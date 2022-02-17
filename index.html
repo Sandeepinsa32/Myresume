@@ -1,320 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Portfolio | Home</title>
+		<title>Portfolio | Home</title>
 
-    <link href="css/index.css" type="text/css" rel="stylesheet" >
+		<link href="css/index.css" type="text/css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
 
-    <!-- <link rel='stylesheet' id='breezycv-google-fonts-css'  href='https://fonts.googleapis.com/
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- <link rel='stylesheet' id='breezycv-google-fonts-css'  href='https://fonts.googleapis.com/
     css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,
     700italic,800,800italic,900,900italic' type='text/css' media='all' /> -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
 
-<script>
+		<script>
+			$(document).ready(function () {
+				$('#blog-btn').click(function () {
+					$('.hide').toggleClass('open');
+				});
 
-    $(document).ready(function(){
+				$('.menu-toggle').click(function () {
+					$('.header-content').removeClass('mobile-menu-hide');
+					$('.header-content').toggleClass('header animate ');
+					$('.menu-toggle').toggleClass('open');
+				});
 
-                    $("#blog-btn").click(function(){
-                        $(".hide").toggleClass("open");
-                    });
+				// for hiding side header when we click on background
+				$('.body-content-area').click(function () {
+					$('.open').removeClass('open');
+					$('.header-content').removeClass('header animate');
+					$('.header-content').toggleClass('mobile-menu-hide');
+				});
 
+				$('a#about-btn').click(() => {
+					$('.show').removeClass('show');
+					$('div.animated-div#about').addClass('show');
+				});
+				$('a#home-btn').click(() => {
+					$('.show').removeClass('show');
+					$('div.animated-div#home').addClass('show');
+				});
+				$('a#resume-btn').click(() => {
+					$('.show').removeClass('show');
+					$('div.animated-div#resume').addClass('show');
+				});
 
-                    $(".menu-toggle").click(function(){
-                        $(".header-content").removeClass("mobile-menu-hide");
-                        $(".header-content").toggleClass("header animate ");
-                        $(".menu-toggle").toggleClass("open");
-                   });
+				// $(".main-div").click(function(){
+				//     $(".open").removeClass("open");
+				// });
 
-                      // for hiding side header when we click on background 
-                      $(".body-content-area").click(function(){
-                        $(".open").removeClass("open");
-                        $(".header-content").removeClass("header animate");
-                        $(".header-content").toggleClass("mobile-menu-hide");
-                    });
+				// $(".page-content").click(function(){
+				//     $(".open").removeClass("open");
+				// });
 
-                    // $(".main-div").click(function(){
-                    //     $(".open").removeClass("open");
-                    // });
+				// $(".header-content").click(function(){
+				//     $(".open").removeClass("open");
+				// });
+			});
+		</script>
+	</head>
 
-                    // $(".page-content").click(function(){
-                    //     $(".open").removeClass("open");
-                    // });
+	<body>
+		<div class="main-div background-div"></div>
 
-                    // $(".header-content").click(function(){
-                    //     $(".open").removeClass("open");
-                    // });
+		<!-- <div class="container-fluid outter-div " id="main-bg-div"> -->
 
-                                 });     
-</script>
+		<!-- <section class="section main-section"> -->
 
-
-
-
-
-    
-</head>
-
-<body>
-    
-<div class="main-div background-div" ></div>
-
-<!-- <div class="container-fluid outter-div " id="main-bg-div"> -->
-
-<!-- <section class="section main-section"> -->
-
-    <div class="page-content container inner-div">
-        <!-- Pic  & Name $ Roles & Social links & home-menu &
+		<div class="page-content container inner-div">
+			<!-- Pic  & Name $ Roles & Social links & home-menu &
               Navigation button &  download cv button & copyright-->
-        <header class="header-content mobile-menu-hide  " >   
-             <!-- Pic  & Name $ Roles -->
-                <div class="header-content-div">
-                    <div class="header-photo">
-                        <a href="#">
-                            <img src="png/img_avatar.png" alt="image_avatar">
-                        </a>
-                    </div><!-- ./header-content-div -->
-                    
-                 <!-- Name $ Roles -->
-                    <div class="header-titles-div">
-                        <a href="#">
-                            <h4 class="header-titles header-titles-name ">Sandeep Insa</h4>
-                        </a>
-                        <h6 class="header-titles header-titles-role" >Web Devloper</h6>
-                    </div><!-- ./header-titles-div -->
-                </div>
-        
-            
-                
+			<header class="header-content mobile-menu-hide">
+				<!-- Pic  & Name $ Roles -->
+				<div class="header-content-div">
+					<div class="header-photo">
+						<a href="#">
+							<img src="png/img_avatar.png" alt="image_avatar" />
+						</a>
+					</div>
+					<!-- ./header-content-div -->
 
-                <!-- Home-menu -->
-                <div class="menu-board">
-                    <ul id="menu-vcard-menu" class=" main-menu">
-                        <li id="menu-item" class="menu-item menu-item-has-icon">
-                            <a class="nav-anim active" href="#" >
-                                <i class=" menu-icon fa fa-home" aria-hidden="true"></i>
-                                <span class="link-text">Home</span>
-                            </a>
-                        </li>
+					<!-- Name $ Roles -->
+					<div class="header-titles-div">
+						<a href="#">
+							<h4 class="header-titles header-titles-name">Sandeep Insa</h4>
+						</a>
+						<h6 class="header-titles header-titles-role">Web Devloper</h6>
+					</div>
+					<!-- ./header-titles-div -->
+				</div>
 
+				<!-- Home-menu -->
+				<div class="menu-board">
+					<ul id="menu-vcard-menu" class="main-menu">
+						<li id="menu-item" class="menu-item menu-item-has-icon">
+							<a class="nav-anim active" href="#" id="home-btn">
+								<i class="menu-icon fa fa-home" aria-hidden="true"></i>
+								<span class="link-text">Home</span>
+							</a>
+						</li>
 
-                        <li id="menu-item" class="menu-item menu-item-has-icon">
-                            <a class="nav-anim " href="#">
-                                <i class=" menu-icon fa fa-user" aria-hidden="true"></i>
-                                <span class="link-text">About Me</span>
-                            </a>
-                        </li>
+						<li id="menu-item" class="menu-item menu-item-has-icon">
+							<a class="nav-anim" href="#" id="about-btn">
+								<i class="menu-icon fa fa-user" aria-hidden="true"></i>
+								<span class="link-text">About Me</span>
+							</a>
+						</li>
 
-                        <li id="menu-item" class="menu-item menu-item-has-icon">
-                            <a class="nav-anim" href="#" >
-                                <i class=" menu-icon fa fa-graduation-cap" aria-hidden="true"></i>
-                                <span class="link-text">Resume</span>
-                            </a>
-                        </li>
+						<li id="menu-item" class="menu-item menu-item-has-icon">
+							<a class="nav-anim" href="#" id="resume-btn">
+								<i class="menu-icon fa fa-graduation-cap" aria-hidden="true"></i>
+								<span class="link-text">Resume</span>
+							</a>
+						</li>
 
+						<li id="menu-item" class="menu-item menu-item-has-icon">
+							<a class="nav-anim" href="#">
+								<i class="menu-icon fa fa-briefcase" aria-hidden="true"></i>
+								<span class="link-text">Portfolio</span>
+							</a>
+						</li>
 
-                        <li id="menu-item" class="menu-item menu-item-has-icon">
-                            <a class="nav-anim" href="#">
-                                <i class="  menu-icon fa fa-briefcase" aria-hidden="true"></i>
-                                <span class="link-text">Portfolio</span>
-                            </a>
-                        </li>
+						<li id="menu-item" class="menu-item menu-item-has-icon">
+							<a class="nav-anim" href="#">
+								<i class="menu-icon fa fa-book" aria-hidden="true"></i>
+								<span class="link-text">Blog</span>
+							</a>
+						</li>
 
-                        <li id="menu-item" class="menu-item menu-item-has-icon">
-                            <a class="nav-anim" href="#" >
-                                <i class=" menu-icon fa fa-book" aria-hidden="true"></i>
-                                <span class="link-text">Blog</span>
-                            </a>
-                        </li>
+						<li id="menu-item" class="menu-item menu-item-has-icon">
+							<a class="nav-anim" href="#">
+								<i class="menu-icon fa fa-envelope" aria-hidden="true"></i>
+								<span class="link-text">Contact</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--./menu-board -->
+				<!--./Home-menu -->
 
+				<!-- Social Links -->
+				<div class="social-links">
+					<ul>
+						<li>
+							<a href="#">
+								<i class="fa fa-linkedin" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- ./Social Links -->
+				<!-- ./Social Links -->
 
-                        <li id="menu-item" class="menu-item menu-item-has-icon">
-                            <a class="nav-anim" href="#">
-                                <i class=" menu-icon fa fa-envelope" aria-hidden="true"></i>
-                                 <span class="link-text">Contact</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div><!--./menu-board --> 
-                <!--./Home-menu -->
+				<!-- Buttons -->
+				<div class="header-buttons-div">
+					<a href="#" class="btn btn-primary download-btn" id="">Download CV</a>
+				</div>
+				<!--./header-buttons-div -->
+				<!-- /Buttons -->
 
-                <!-- Social Links -->
-                <div class="social-links">
-                    <ul>
-                        <li>
-                            <a href="#" >
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" >
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul> 
-                </div><!-- ./Social Links -->
-                <!-- ./Social Links -->
+				<!-- Copyrights -->
+				<div class="copyrights">
+					<p>© 2020 All rights reserved.</p>
+				</div>
+				<!-- ./Copyrights -->
+				<!-- /Copyrights -->
+			</header>
+			<!-- ./header-content -->
 
-                
-                <!-- Buttons -->
-                <div class="header-buttons-div">
-                        <a href="#"  class="btn btn-primary download-btn" id="">Download CV</a>
-                </div><!--./header-buttons-div -->
-                <!-- /Buttons -->
+			<div class="mobile-site-title mobile-visible">
+				<a href="#"> Sandee </a>
+			</div>
+			<!--Mobile Navigation-->
+			<div class="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<!--Navigation-button -->
+			<div class="navigation-arrows-div">
+				<div class="navigation-arrow navigation-arrow-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+				<div class="navigation-arrow navigation-arrow-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+			</div>
+			<!--./navigation-arrows-div -->
+			<!--./Navigation-button -->
 
-                <!-- Copyrights -->
-                <div class="copyrights">
-                <p>© 2020 All rights reserved.</p>
-                </div><!-- ./Copyrights -->
-                <!-- /Copyrights -->
+			<div class="body-content-area">
+				<!-- // index body content -->
 
-        </header>  <!-- ./header-content -->
+				<div class="animated-div show" id="home">
+					<section class="animated-section">
+						<div class="section-content">
+							<div class="home-titles-div">
+								<a href="#">
+									<h2 class="home-titles home-titles-name">sandeep Insa</h2>
+								</a>
+								<h5 class="home-titles home-titles-role">Web Devloper</h5>
+							</div>
+							<!--./home-titles-div -->
+						</div>
+						<!--./Section-Content -->
+					</section>
+				</div>
 
-        <div class="mobile-site-title mobile-visible">
-            <a href="#">
-                Sandee      
-            </a>
-        </div>
-        <!--Mobile Navigation-->
-        <div class="menu-toggle" >
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-            <!--Navigation-button -->
-            <div class="navigation-arrows-div">
-                <div class=" navigation-arrow navigation-arrow-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
-                <div class=" navigation-arrow navigation-arrow-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
-            </div> <!--./navigation-arrows-div -->
-                <!--./Navigation-button -->
+				<!--  about me PArt  -->
+				<div class="animated-div" id="about">
+					<section class="animated-section">
+						<div class="section-content">
+							<div>
+								<h6 class="section-title"><i class="fa fa-angle-right active" aria-hidden="true"></i> Sandeep Kumar</h6>
+							</div>
+							<h6 class="section-titles-name">Hi, I am Sandeep a Salesforce and Fullstack Developer</h6>
+							<!-- ================================================================================= -->
+							<h6 class="section-titles-name">&nbsp;</h6>
+							<div>
+								<h6 class="section-title"><i class="fa fa-angle-right active" aria-hidden="true"></i> WHO I AM</h6>
+							</div>
+							<h6 class="section-titles-name">
+								I'm a 22-year-old Javascript Developer and UI designer from India. I’m Self-Learner, passionate coder and good in Frontend design. I’ve been working since 2018.
+							</h6>
+							<!-- ================================================================================= -->
+							<h6 class="section-titles-name">&nbsp;</h6>
+							<div>
+								<h6 class="section-title"><i class="fa fa-angle-right active" aria-hidden="true"></i> WHAT I DO</h6>
+							</div>
+							<h6 class="section-titles-name">
+								I work on Products , Websites , long-running Projects , Progressive-web-app and Mobile-App Design Focusing on scalability , maintainability , Performance , and more.
+							</h6>
+							<!-- ================================================================================= -->
+							<h6 class="section-titles-name">&nbsp;</h6>
+							<div>
+								<h6 class="section-title"><i class="fa fa-angle-right active" aria-hidden="true"></i> Technolog Familier With</h6>
+							</div>
+							<div class="">
+								<!-- <span class="section-titles-name download-btn skill-btn">HTML5</span>
+									<span class="section-titles-name download-btn skill-btn">CSS3</span> -->
+								<span class="section-titles-name download-btn skill-btn">JavaScript</span>
+								<span class="section-titles-name download-btn skill-btn">PHP</span>
+								<span class="section-titles-name download-btn skill-btn">MySQl</span>
+								<span class="section-titles-name download-btn skill-btn">Laravel </span>
+								<span class="section-titles-name download-btn skill-btn">Bootstrap</span>
+								<!-- <span class="section-titles-name download-btn skill-btn">JQuery</span>
+									<span class="section-titles-name download-btn skill-btn">Json</span>
+									<span class="section-titles-name download-btn skill-btn">REST.api</span> -->
+								<!-- <span class="section-titles-name download-btn skill-btn">Ajax</span>
+									<span class="section-titles-name download-btn skill-btn">UI/UX</span> -->
+								<span class="section-titles-name download-btn skill-btn">React.Js</span>
+								<span class="section-titles-name download-btn skill-btn">React-Native</span>
+								<span class="section-titles-name download-btn skill-btn">Apex</span>
+								<span class="section-titles-name download-btn skill-btn">Node.Js</span>
+								<span class="section-titles-name download-btn skill-btn">Salesfroce admin</span>
+							</div>
 
+							<!-- <span class="section-titles-name " >User Interface</span>
+                                    <span class="section-titles-name " >User Experience</span>
+                                        <span class="section-titles-name " >   Visual design</span>
+                                            <span class="section-titles-name " >Interaction design</span>
+                                                <span class="section-titles-name " >Prototyping</span>
+                                                    <span class="section-titles-name " >Frontend Architecture</span>
+                                                        <span class="section-titles-name " >Product research</span> -->
+						</div>
+						<!--./home-titles-div -->
+					</section>
+					<!--./Section-Content -->
+				</div>
 
-        <div class="body-content-area">
-            <div class="animated-div">
-                <section class="animated-section">
-                    <div class="section-content">
-                        <div class="home-titles-div">
-                            <a href="#">
-                                <h2 class="home-titles home-titles-name ">sandeep Insa</h2>
-                            </a>
-                            <h5 class="home-titles home-titles-role" >Web Devloper</h5>
-                        </div> <!--./home-titles-div -->
-                    </div> <!--./Section-Content -->
-                </section> 
-            </div>
-        </div> <!--./Content-area -->
+				<!-- experince page  -->
+				<div class="animated-div" id="resume">
+					<section class="animated-section" style="margin-left: 1rem">
+						<div class="section-content">
+							<h6 class="section-titles project-title"><i class="fa fa-terminal active" aria-hidden="true"> </i> Experience :</h6>
+							<!-- ================================================================================= -->
+							<ol class="Order-list" reversed>
+								<li>
+									<article>
+										<h1 class="section-titles-name">Best-Random_Quote | RandomQuote.Co</h1>
 
-    </div><!-- ./page-content -->
+										<h6 class="section-title-desc">
+											<i class="fa fa-terminal active" aria-hidden="true"> </i>
+											Api Based Web-app Which Deliver Famous Quote's
+										</h6>
+										<div class="section-title">
+											<span class="date"> 16th November 2020 </span>
+											<span class="section-links">
+												<a href="https://randomquoteco.netlify.app/" class="Check-it-btn">
+													<i class="fa fa-play-circle" aria-hidden="true"> </i>&nbsp;Check It Live <i> </i>
+												</a>
+												<a href="https://github.com/Sandeepinsa32/Random.Quote.Co" class=""><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+											</span>
+										</div>
+									</article>
+								</li>
 
-    
-<!-- </section>./main-section -->
+								<li>
+									<article>
+										<h1 class="section-titles-name">📽️ Best-Movie-Recommendation | ⚛️ React</h1>
 
-<!--</div>./outter-div-->
+										<h6 class="section-title-desc">
+											<i class="fa fa-terminal active" aria-hidden="true"> </i>
+											Movie-Recommendation app for paticing React State
+										</h6>
+										<div class="section-title">
+											<span class="date"> 16th November 2020 </span>
+											<span class="section-links">
+												<a href="https://2tb99.csb.app/" class="Check-it-btn"> <i class="fa fa-play-circle" aria-hidden="true"> </i> &nbsp;Check It Live <i> </i> </a>
+												<a href="https://github.com/Sandeepinsa32/best-movies" class=""><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+											</span>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article>
+										<h1 class="section-titles-name">😃 Emojipedia | ⚛️ React</h1>
 
+										<h6 class="section-title-desc">
+											<i class="fa fa-terminal active" aria-hidden="true"> </i>
+											🦌🎅 🎁 Emojipedia is WikiPedia of Emojis ❄️⛄🎄
+										</h6>
+										<div class="section-title">
+											<span class="date"> 16th November 2020 </span>
+											<span class="section-links">
+												<a href="https://quefv.csb.app/" class="Check-it-btn"> <i class="fa fa-play-circle" aria-hidden="true">&nbsp; </i> Check It Live <i> </i> </a>
+												<a href="https://github.com/Sandeepinsa32/emojipedia" class=""><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+											</span>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article>
+										<h1 class="section-titles-name">📝 Text-to-Morse_Code Translator| 💻 Vanilla_JavaScript</h1>
 
-    <!-- ======================================./Blog-Slider=========================================== -->
-          
-    <div id="blog-sidebar blog-btn " class="blog-sidebar hide ">
-            <div class="sidebar-toggle  hide" id="blog-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-    	    <div class="blog-sidebar-content clearfix">
-                <div class="sidebar-item">
-                    <form role="search" method="get" class="search-form" action="#">
-                        <label>
-                            <span class="screen-reader-text">Search for:</span>
-                            <input type="search" class="search-field" placeholder="Search …" value="" name="s">
-                        </label>
-                        <input type="submit" class="search-submit" value="Search">
-                    </form>
-                </div>	
-        
-                <div class="sidebar-item">	
-                    <div class="sidebar-title">
-                        <h4>Recent Posts</h4>
-                    
-                    </div>	
-                    <ul>
-                        <li>
-                            <a href="#">Best Practices for Animated Progress Indicators</a>
-                        </li>
-                        <li>
-                            <a href="#">Best Practices for Animated Progress Indicators</a>
-                        </li>
-                        <li>
-                            <a href="#">Best Practices for Animated Progress Indicators</a>
-                        </li>
-                        <li>
-                            <a href="#">Best Practices for Animated Progress Indicators</a>
-                        </li>
-                        <li>
-                            <a href="#">Best Practices for Animated Progress Indicators</a>
-                        </li>
-                    </ul>
-                </div>
+										<h6 class="section-title-desc">
+											<i class="fa fa-terminal active" aria-hidden="true"> </i>
+											Web-app Which We Can Use To Convert Text <em>to</em> Morse_Code .
+										</h6>
+										<div class="section-title">
+											<span class="date"> 16th November 2020 </span>
+											<span class="section-links">
+												<a href="https://text2morse.netlify.app/" class="Check-it-btn"> <i class="fa fa-play-circle" aria-hidden="true"> </i> Check It Live <i> </i> </a>
+												<a href="https://github.com/Sandeepinsa32/Text-2-Morse_code-Translate" class=""
+													><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a
+												>
+											</span>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article>
+										<h1 class="section-titles-name">🔤 English-To-Minion's-Language | 💻 Vanilla_JavaScript</h1>
 
-                <div class="sidebar-item">
-                    <div class="sidebar-title">
-                        <h4>Recent Comments</h4>
-                    </div>
-                    <ul id="recentcomments">
-                        <li class="recentcomments">
-                            <span class="comment-author-link">
-                                <a href="" rel="external nofollow ugc" class="url">
-                                    A WordPress Commenter
-                                </a>
-                            </span>  on     <a href="#">  Hello world!  </a>
+										<h6 class="section-title-desc">
+											<i class="fa fa-terminal active" aria-hidden="true"> </i>
+											Basic Webapp Which can translate English to Banana Talk (Language Used By Minions).
+										</h6>
+										<div class="section-title">
+											<span class="date"> 16th November 2020 </span>
+											<span class="section-links">
+												<a href="https://miniontalktool.netlify.app/" class="Check-it-btn"> <i class="fa fa-play-circle" aria-hidden="true"> </i> Check It Live<i> </i> </a>
+												<a href="https://github.com/Sandeepinsa32/Minion-Language-Translator-Tool" class=""
+													><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a
+												>
+											</span>
+										</div>
+									</article>
+								</li>
 
-                        </li>
-                        <li class="recentcomments">
-                            <span class="comment-author-link">
-                                <a href="" rel="external nofollow ugc" class="url">
-                                    A WordPress Commenter
-                                </a>
-                            </span>  on     <a href="#">  Hello world!  </a>
+								<li>
+									<article>
+										<h1 class="section-titles-name">✨ Simplay-Math-Quiz | 💻 In Node.Js</h1>
 
-                        </li>
-                    </ul>
-                </div>		
-            </div>
-    </div>
+										<h6 class="section-title-desc">
+											<i class="fa fa-terminal active" aria-hidden="true"> </i>
+											It is a CLI (Command-Line-Interface) Based Simple Quiz Game
+										</h6>
+										<div class="section-title">
+											<span class="date"> 16th November 2020 </span>
+											<span class="section-links">
+												<a href="https://repl.it/@sandeepinsa32/first-nodejs-1#index.js?embed=1&output=1" class="Check-it-btn">
+													<i class="fa fa-play-circle" aria-hidden="true"> </i> Play Game <i> </i>
+												</a>
+												<a href="https://repl.it/@sandeepinsa32/first-nodejs-1#index.js" class=""><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+											</span>
+										</div>
+									</article>
+								</li>
 
+								<li>
+									<article>
+										<h1 class="section-titles-name">⌚ Home | ShopWatchReact.Com ⌚</h1>
 
+										<h6 class="section-title-desc">
+											<i class="fa fa-terminal active" aria-hidden="true"> </i>
+											Product Descripton Template Page For Smart-watch Developed in ⚛️ <em>React.Js</em>.
+										</h6>
+										<div class="section-title">
+											<span class="date"> 16th August 2020 </span>
+											<span class="section-links">
+												<a href="https://shopsmartwatch.netlify.app/" class="Check-it-btn"><i class="fa fa-play-circle" aria-hidden="true"> </i> Check It Live </a>
+												<a href="https://github.com/Sandeepinsa32/fitbit.github.io" class=""><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+											</span>
+										</div>
+									</article>
+								</li>
 
- <!---================================Script-part============================================================--->
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+								<li>
+									<article>
+										<h1 class="section-titles-name">⌚ Home | ShopSmartWatch.Com ⌚</h1>
 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
- integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+										<h6 class="section-title-desc">
+											<i class="fa fa-terminal active" aria-hidden="true"> </i>
+											Product Descripton Template Page For Smart-watch Developed in Simple HTML , CSS , Bootstrap , JQuery And JavaScript
+										</h6>
+										<div class="section-title">
+											<span class="date"> 20th May 2020 </span>
+											<span class="section-links">
+												<a href="https://shopsmartwatch.netlify.app/" class="Check-it-btn"><i class="fa fa-play-circle" aria-hidden="true"> </i> Check It Live </a>
+												<a href="https://github.com/Sandeepinsa32/fitbit.github.io" class=""><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+											</span>
+										</div>
+									</article>
+								</li>
 
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
- integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+								<li>
+									<article>
+										<h1 class="section-titles-name" style="font-size: 22px">✨ Internship | Full-Stack 💻Web-Developer</h1>
 
+										<h6 class="section-title-desc">
+											<i class="fa fa-terminal active" aria-hidden="true"> </i>
+											Full-Stack Web-Developer Using Laravel-PHP , in Learnweel Pvt. Ltd.
+										</h6>
+										<div class="section-title">
+											<span class="date"> 22th may 2020 </span> <span> - To -</span>
+											<span class="date"> 25th july 2020 </span>
+											<!-- <span class="section-links">
+                                    <a href="https://watchshoppage.netlify.app/" class="" > <i class="fa fa-play-circle" aria-hidden="true"> </i> Play Game <i> </i> </a>
+                                    <a href="https://github.com/sandee32/fitbit.github.io" class="" ><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+                                    </span> -->
+										</div>
+									</article>
+								</li>
 
+								<li>
+									<article>
+										<h1 class="section-titles-name">🛒Cart-Page | ShopingSite.Com 🛒</h1>
 
-    </body>
+										<h6 class="section-title-desc">
+											<i class="fa fa-terminal active" aria-hidden="true"> </i>
+											Product CartPage for Shopping Site With Backend IN PHP
+										</h6>
+										<div class="section-title">
+											<span class="date"> 10th May 2020 </span>
+											<span class="section-links">
+												<a href="https://shopingsite.netlify.app/" class="Check-it-btn"><i class="fa fa-play-circle" aria-hidden="true"> </i> Check It Live </a>
+												<a href="https://github.com/Sandeepinsa32/CartWebpage.github.io" class=""><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+											</span>
+										</div>
+									</article>
+								</li>
+
+								<li>
+									<article>
+										<h1 class="section-titles-name">📜 Home | MyResumeCom 📜</h1>
+
+										<h6 class="section-title-desc">
+											<i class="fa fa-terminal active" aria-hidden="true"> </i>
+											Simple Resume website Developed in Simple HTML , CSS , Bootstrap , JQuery And JavaScript
+										</h6>
+										<div class="section-title">
+											<span class="date"> 20th April 2020 </span>
+											<span class="section-links">
+												<a href="https://myresumecom.netlify.app/" class="Check-it-btn"><i class="fa fa-play-circle" aria-hidden="true"> </i> Check It Live </a>
+												<a href="https://github.com/Sandeepinsa32/protfolio_site" class=""><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+											</span>
+										</div>
+									</article>
+								</li>
+
+								<li>
+									<article>
+										<h1 class="section-titles-name">✨ Homepage|Carpool Website</h1>
+
+										<h6 class="section-title-desc">
+											<i class="fa fa-terminal active" aria-hidden="true"> </i>
+											It is Simple Template For Carpool website Developed in Simple HTML , CSS , Bootstrap , JQuery And JavaScript
+										</h6>
+										<div class="section-title">
+											<span class="date"> 09th April 2020 </span>
+											<span class="section-links">
+												<a href="https://carpoolwebsite.netlify.app/" class="Check-it-btn"><i class="fa fa-play-circle" aria-hidden="true"> </i> Check It Live </a>
+												<a href="https://github.com/Sandeepinsa32/newpool" class=""><i class="fa fa-github" aria-hidden="true"> </i> View Source on Github</a>
+											</span>
+										</div>
+									</article>
+								</li>
+							</ol>
+						</div>
+						<!--./Section-Content -->
+					</section>
+				</div>
+			</div>
+			<!--./Content-area -->
+		</div>
+		<!-- ./page-content -->
+
+		<!-- </section>./main-section -->
+
+		<!--</div>./outter-div-->
+
+		<!-- ======================================./Blog-Slider=========================================== -->
+
+		<div id="blog-sidebar blog-btn " class="blog-sidebar hide">
+			<div class="sidebar-toggle hide" id="blog-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="blog-sidebar-content clearfix">
+				<div class="sidebar-item">
+					<form role="search" method="get" class="search-form" action="#">
+						<label>
+							<span class="screen-reader-text">Search for:</span>
+							<input type="search" class="search-field" placeholder="Search …" value="" name="s" />
+						</label>
+						<input type="submit" class="search-submit" value="Search" />
+					</form>
+				</div>
+
+				<div class="sidebar-item">
+					<div class="sidebar-title">
+						<h4>Recent Posts</h4>
+					</div>
+					<ul>
+						<li>
+							<a href="#">Best Practices for Animated Progress Indicators</a>
+						</li>
+						<li>
+							<a href="#">Best Practices for Animated Progress Indicators</a>
+						</li>
+						<li>
+							<a href="#">Best Practices for Animated Progress Indicators</a>
+						</li>
+						<li>
+							<a href="#">Best Practices for Animated Progress Indicators</a>
+						</li>
+						<li>
+							<a href="#">Best Practices for Animated Progress Indicators</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="sidebar-item">
+					<div class="sidebar-title">
+						<h4>Recent Comments</h4>
+					</div>
+					<ul id="recentcomments">
+						<li class="recentcomments">
+							<span class="comment-author-link">
+								<a href="" rel="external nofollow ugc" class="url"> A WordPress Commenter </a>
+							</span>
+							on <a href="#"> Hello world! </a>
+						</li>
+						<li class="recentcomments">
+							<span class="comment-author-link">
+								<a href="" rel="external nofollow ugc" class="url"> A WordPress Commenter </a>
+							</span>
+							on <a href="#"> Hello world! </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!---================================Script-part============================================================--->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>

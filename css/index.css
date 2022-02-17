@@ -82,6 +82,14 @@ body {
     background-color: #555;
     border-radius: 20px 0px 0px 20px;
 }
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
 
 
 
@@ -363,11 +371,17 @@ input[type="submit"] {
     max-width: 73% !important;
     background-color: #222;
     border-radius: 32px 20px 20px 32px;
+    overflow-y: scroll;
 }
-
+.body-content-area ::-webkit-scrollbar {
+    display: none !important;
+}
 .animated-div {
     height: auto;
     width: auto;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
     /* padding: 60px; */
 }
 
@@ -378,7 +392,12 @@ input[type="submit"] {
 
 }
 
-
+.show{
+    display: block !important;
+    visibility: visible  !important;
+    opacity: 1 !important;
+    
+}
 
 /*=============================================----- BLog-Area-------===================================== */
 
@@ -1025,5 +1044,125 @@ input[type="submit"] {
         top: 30px;
         left: 15px;
     }
+
+}
+/*  About me css */
+
+.animated-section {
+    height: auto;
+    width: auto;
+    padding: 5% 2%;
+
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    /*  #b5b6b7 */
+    text-transform: uppercase;
+}
+
+.section-titles-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.skill-btn {
+    background-color: #fff !important;
+    color: #0ba376 !important;
+    padding: 5px 17px !important;
+    margin: 5px;
+}
+
+/* project experince css  */
+
+body {
+    transition: all 3s ease-in-out !important;
+}
+
+
+.animated-section {
+    padding: 2%;
+}
+
+.project-title {
+    color: #0ba376;
+    font-size: 38px;
+    /* text-decoration: underline; */
+    position: relative;
+    left: -15px;
+    padding: 0 !important;
+}
+
+.section-titles-name {
+    /* text-decoration: underline; */
+    padding-top: 1%;
+}
+
+.section-title {
+    padding-left: 1%;
+}
+
+.section-title-desc {
+    color: #999;
+    font-size: 18px;
+}
+
+ol.Order-list {
+    /* list-style-type: numbe/; */
+    color: #fff !important;
+    margin: 10px;
+}
+
+ol li {
+    padding-top: 10px;
+    border-bottom: 1px solid #0ba376;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.section-links {
+    float: right !important;
+}
+
+.section-links a {
+    color: #0ba376 !important;
+    padding: 0rem 3rem;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .body-content-area {
+        padding: 60px 30px !important;
+        
+    }
+
+    ol.Order-list {
+        margin: 28px !important;
+    }
+
+    .section-links {
+        float: none !important;
+
+    }
+
+    .section-links a {
+        padding: 0px !Important;
+        display: block !important;
+    }
+
+    .date {
+        display: block !important;
+    }
+
+
+
+
+
+
+
+
 
 }
